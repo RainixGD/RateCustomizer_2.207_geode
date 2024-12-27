@@ -128,8 +128,6 @@ void RateCustomizerManager::onLevelCell_loadCustomLevelCell(LevelCell* cell) {
 }
 
 RateCustomizerManager* RateCustomizerManager::getInstance() {
-	AllocConsole();
-	freopen_s(reinterpret_cast<FILE**>(stdout), "CONOUT$", "w", stdout);
 	if (!instance) {
 		instance = new RateCustomizerManager();
 		instance->init();
